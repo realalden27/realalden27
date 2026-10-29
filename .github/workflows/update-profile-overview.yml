@@ -1,0 +1,39 @@
+name: Update profile overview
+
+on:
+  schedule:
+    - cron: "23 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-overview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate overview card
+        run: node scripts/generate-profile-overview.mjs
+        env:
+          GH_USERNAME: realalden27
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit updated card
+        run: |
+          if git diff --quiet -- profile/overview.svg; then
+            echo "Overview card is already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/overview.svg
+          git commit -m "Update profile overview card"
+          git push

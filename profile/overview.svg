@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160" viewBox="0 0 900 160" role="img" aria-labelledby="title description">
+  <title id="title">GitHub overview for Alden</title>
+  <desc id="description">Repository, star, follower, and language stats for realalden27.</desc>
+  <style>
+    .panel { fill: #111827; }
+    .heading { fill: #f3f4f6; font: 600 13px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; letter-spacing: 1.4px; }
+    .number { fill: #f9fafb; font: 700 24px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+    .label { fill: #9ca3af; font: 13px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+    .languages { fill: #d1d5db; font: 13px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+    .accent { fill: #60a5fa; }
+  </style>
+  <rect class="panel" width="900" height="160" rx="8" />
+  <text x="36" y="37" class="heading">GITHUB OVERVIEW</text>
+  <circle cx="861" cy="33" r="4" class="accent" />
+  <line x1="36" y1="53" x2="864" y2="53" stroke="#273244" />
+  <text x="64" y="91" class="number">2</text><text x="64" y="113" class="label">Repositories</text><text x="334" y="91" class="number">1</text><text x="334" y="113" class="label">Stars</text><text x="604" y="91" class="number">0</text><text x="604" y="113" class="label">Followers</text>
+  <line x1="36" y1="128" x2="864" y2="128" stroke="#273244" />
+  <text x="36" y="149" class="label">Languages</text>
+  <text x="112" y="149" class="languages">TypeScript</text>
+</svg>
