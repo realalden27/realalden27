@@ -13,8 +13,8 @@
   <text x="36" y="37" class="heading">GITHUB OVERVIEW</text>
   <circle cx="861" cy="33" r="4" class="accent" />
   <line x1="36" y1="53" x2="864" y2="53" stroke="#273244" />
-  <text x="64" y="91" class="number">3</text><text x="64" y="113" class="label">Repositories</text><text x="334" y="91" class="number">1</text><text x="334" y="113" class="label">Stars</text><text x="604" y="91" class="number">0</text><text x="604" y="113" class="label">Followers</text>
+  <text x="64" y="91" class="number">4</text><text x="64" y="113" class="label">Repositories</text><text x="334" y="91" class="number">1</text><text x="334" y="113" class="label">Stars</text><text x="604" y="91" class="number">0</text><text x="604" y="113" class="label">Followers</text>
   <line x1="36" y1="128" x2="864" y2="128" stroke="#273244" />
   <text x="36" y="149" class="label">Languages</text>
-  <text x="112" y="149" class="languages">JavaScript  ·  TypeScript</text>
+  <text x="112" y="149" class="languages">TypeScript  ·  JavaScript</text>
 </svg>
